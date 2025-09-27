@@ -12,18 +12,14 @@ int suma(int arg1, int arg2) {
     return arg1 + arg2;
 }
 
+
 int main(int narg, char *arg[]) {
     int dat1 = 50;
     int dat2 = 200;
     int res;
 
-    if (narg > 1) {
-        dat1 = std::atoi(arg[1]);
-    }
-
-    if (narg > 2) {
-        dat2 = std::atoi(arg[2]);
-    }
+    if (narg > 1) dat1 = std::atoi(arg[1]);
+    if (narg > 2) dat2 = std::atoi(arg[2]);
 
     res = suma(dat1, dat2);
 
